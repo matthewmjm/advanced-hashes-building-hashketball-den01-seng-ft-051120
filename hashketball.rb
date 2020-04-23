@@ -51,13 +51,22 @@ end
   stat_desc9 = [:player_name, "Ben Gordon", :number, 8, :shoe, 15, :points, 33, :rebounds, 3, :assists, 2, :steals, 1, :blocks, 1, :slam_dunks, 0]
   stat_desc10 = [:player_name, "Kemba Walker", :number, 33, :shoe, 15, :points, 6, :rebounds, 12, :assists, 12, :steals, 7, :blocks, 5, :slam_dunks, 12]
 game_hash.each do |key, value|
-  value.each do |key2, value2|
-    puts key2
-    if key2 == :players
-      game_hash[key][key2] = Hash[*stat_desc1], Hash[*stat_desc2], Hash[*stat_desc3], Hash[*stat_desc4], Hash[*stat_desc5]
-    else
+  if key = :home
+    value.each do |key2, value2|
+      if key2 == :players
+        game_hash[key][key2] = Hash[*stat_desc1], Hash[*stat_desc2], Hash[*stat_desc3], Hash[*stat_desc4], Hash[*stat_desc5]
+        else
+      end
     end
-  end 
+  end
+  if key = :away
+    value.each do |key2, value2|
+      if key2 == :players
+        game_hash[key][key2] = Hash[*stat_desc6], Hash[*stat_desc7], Hash[*stat_desc8], Hash[*stat_desc9], Hash[*stat_desc10]
+        else
+      end
+    end
+  end  
 end
   
 binding.pry  
