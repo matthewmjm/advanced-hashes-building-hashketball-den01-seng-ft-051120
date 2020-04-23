@@ -43,6 +43,14 @@ end
   stat_desc = [:player_name, "", :number, 0, :shoe, 0, :points, 0, :rebounds, 0, :assists, 0, :steals, 0, :blocks, 0, :slam_dunks, 0]
   stat_desc1 = [:player_name, "Alan Anderson", :number, 0, :shoe, 16, :points, 22, :rebounds, 12, :assists, 12, :steals, 3, :blocks, 1, :slam_dunks, 1]
   stat_desc2 = [:player_name, "Reggie Evans", :number, 30, :shoe, 14, :points, 12, :rebounds, 12, :assists, 12, :steals, 12, :blocks, 12, :slam_dunks, 7]
+  stat_desc3 = [   ]
+  
+  
+  
+  
+  
+  
+  
 game_hash.each do |key, value|
   value.each do |key2, value2|
     puts key2
