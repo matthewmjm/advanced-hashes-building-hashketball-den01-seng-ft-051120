@@ -40,7 +40,6 @@ end
 
 # :players key points to AOH and each hash should contain the players' stats
  # stat_desc = ["player_name", "number", "shoe", "points", "rebounds", "assists", "steals", "blocks", "slam_dunks"]
-  stat_desc = [:player_name, "", :number, 0, :shoe, 0, :points, 0, :rebounds, 0, :assists, 0, :steals, 0, :blocks, 0, :slam_dunks, 0]
   stat_desc1 = [:player_name, "Alan Anderson", :number, 0, :shoe, 16, :points, 22, :rebounds, 12, :assists, 12, :steals, 3, :blocks, 1, :slam_dunks, 1]
   stat_desc2 = [:player_name, "Reggie Evans", :number, 30, :shoe, 14, :points, 12, :rebounds, 12, :assists, 12, :steals, 12, :blocks, 12, :slam_dunks, 7]
   stat_desc3 = [:player_name, "Brook Lopez", :number, 11, :shoe, 17, :points, 17, :rebounds, 19, :assists, 10, :steals, 3, :blocks, 1, :slam_dunks, 15]
@@ -51,11 +50,6 @@ end
   stat_desc8 = [:player_name, "DeSagna Diop", :number, 2, :shoe, 14, :points, 24, :rebounds, 12, :assists, 12, :steals, 4, :blocks, 5, :slam_dunks, 5]
   stat_desc9 = [:player_name, "Ben Gordon", :number, 8, :shoe, 15, :points, 33, :rebounds, 3, :assists, 2, :steals, 1, :blocks, 1, :slam_dunks, 0]
   stat_desc10 = [:player_name, "Kemba Walker", :number, 33, :shoe, 15, :points, 6, :rebounds, 12, :assists, 12, :steals, 7, :blocks, 5, :slam_dunks, 12]
-  
-  
-  
-  
-  
 game_hash.each do |key, value|
   value.each do |key2, value2|
     puts key2
