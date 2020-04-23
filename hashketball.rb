@@ -68,7 +68,5 @@ game_hash.each do |key, value|
     end
   end  
 end
-  
-binding.pry  
 game_hash  
 end  
