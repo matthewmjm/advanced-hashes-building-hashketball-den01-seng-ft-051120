@@ -49,7 +49,7 @@ game_hash.each do |key, value|
     puts key2
     if key2 == :players
       game_hash[key][key2] = Hash[*stat_desc1]
-      game_hash[key][key2] = Hash[*stat_desc1]
+      game_hash[key][key2] = Hash[*stat_desc2]
     else
     end
   end 
